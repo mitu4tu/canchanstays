@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CANCHAN STAYS LLC | 合同会社 CANCHAN STAYS</title>
+<meta name="description" content="合同会社 CANCHAN STAYS は東京都墨田区を拠点に、宿泊施設の運営、民泊運営者向けクラウドサービスの提供、訪日外国人向け旅行案内サービスの開発を行っています。">
+<link rel="canonical" href="https://canchanstays.com/">
+<meta property="og:title" content="CANCHAN STAYS LLC">
+<meta property="og:description" content="Hospitality, rental-operations software and inbound travel guidance from Sumida, Tokyo.">
+<meta property="og:url" content="https://canchanstays.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f1e7;--ink:#1f1d1a;--sub:#6b645a;--line:#d9cfbd;--accent:#b0472f;--card:#fbf8f2}
+@media (prefers-color-scheme:dark){:root{--paper:#171513;--ink:#ece6da;--sub:#a59c8e;--line:#3a352e;--accent:#e07a5f;--card:#1f1c19}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;letter-spacing:.08em;text-decoration:none}
+nav a{font-size:14px;margin-left:22px;text-decoration:none;color:var(--sub)}
+nav a:hover{color:var(--accent)}
+.hero{padding:112px 0 88px;display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:end}
+.eyebrow{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;font-size:14px;color:var(--accent);text-transform:uppercase}
+h1{font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(32px,5.2vw,58px);line-height:1.35;margin:18px 0 28px}
+.lead{color:var(--sub);max-width:34em}
+.hero-en{border-left:2px solid var(--accent);padding-left:20px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.6;color:var(--sub)}
+section{padding:84px 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:220px 1fr;gap:40px}
+h2{font-family:"Shippori Mincho",serif;font-size:28px;font-weight:700}
+h2 small{display:block;font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.25em;color:var(--accent);font-weight:500;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:4px;transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.35)}
+.card .no{font-family:"Cormorant Garamond",serif;font-size:38px;color:var(--accent);line-height:1}
+.card h3{font-family:"Shippori Mincho",serif;font-size:19px;margin:12px 0 10px}
+.card p{color:var(--sub);font-size:14.5px}
+.card .en{font-size:13px;margin-top:12px;font-style:italic}
+.card ul{list-style:none;margin-top:14px;font-size:14px}
+.card li{padding:6px 0;border-top:1px dashed var(--line)}
+.card li a,.card .more{color:var(--accent);text-decoration:none}
+.card .more{margin-top:auto;padding-top:14px;font-size:14px}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--accent);color:var(--accent);padding:0 10px;border-radius:99px;margin-left:6px;vertical-align:middle}
+dl{display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--line)}
+dt,dd{padding:16px 0;border-bottom:1px solid var(--line)}
+dt{color:var(--sub);font-size:14px}
+dd .en{display:block;color:var(--sub);font-size:13px}
+.contact a{color:var(--accent);font-size:20px;font-family:"Cormorant Garamond",serif;letter-spacing:.04em}
+footer{padding:40px 0;color:var(--sub);font-size:13px;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s}
+.reveal.on{opacity:1;transform:none}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}
+@media (max-width:760px){.hero,.sec-head{grid-template-columns:1fr}.hero{padding:64px 0 52px}dl{grid-template-columns:1fr}dt{padding-bottom:0;border-bottom:none}nav a{margin-left:12px;font-size:13px}section{padding:60px 0}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.purpose .big{font-family:"Shippori Mincho",serif;font-size:clamp(22px,2.8vw,30px);line-height:1.6;margin-bottom:24px}
+.purpose p{margin-bottom:16px;max-width:42em}.purpose .en,.story .en{color:var(--sub);font-style:italic;font-size:14px}
+.story .step{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.story .step span{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--accent);line-height:1}
+.story h3{font-family:"Shippori Mincho",serif;font-size:19px;margin-bottom:8px}.story p{color:var(--sub)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">CANCHAN STAYS</a><nav><a href="#purpose">目的</a><a href="#story">経緯</a><a href="#business">事業内容</a><a href="#company">会社概要</a><a href="#contact">お問い合わせ</a></nav></div></header>
+<main class="wrap">
+<div class="hero">
+ <div>
+  <p class="eyebrow">Tokyo &middot; Sumida</p>
+  <h1>下町・墨田から、<br>日本を訪れる方へ<br>確かな旅の案内を。</h1>
+  <p class="lead">合同会社 CANCHAN STAYS は、東京都墨田区を拠点に宿泊施設を運営しています。現場の運営ノウハウを民泊運営者向けのクラウドサービスとして提供するとともに、海外からのお客様の声をもとにした訪日外国人向けの旅行案内サービスを開発しています。</p>
+ </div>
+ <p class="hero-en">CANCHAN STAYS LLC operates guest accommodation in Sumida, Tokyo, provides cloud software for short-term rental operators, and is building a trustworthy travel guide for international visitors to Japan.</p>
+</div>
+<section id="purpose" class="reveal">
+ <div class="sec-head">
+  <h2><small>Purpose</small>私たちの目的</h2>
+  <div class="purpose">
+   <p class="big">日本を訪れる一人ひとりが、<br>自分に合った「本当に良い場所」に出会える旅を。</p>
+   <p>食の好みは人によって違います。日本で暮らす人と海外から訪れる人とでも、味の感じ方、食の制限、言葉や支払い方法の不安は大きく異なります。ところが、旅行者が頼りにする評価の多くは、さまざまな立場の人の声をひとつの平均点にまとめたものです。平均点の高さだけでは、「自分にとって良い場所かどうか」は判断できません。</p><p>多くの人にとって日本への旅は、一生のうちに何度あるか分からない特別な機会です。限られた日数と食事の一回一回を、後悔のないものにしてほしい。それが私たちの出発点です。</p>
+   <p>私たちは、同じ立場で日本を旅した海外の旅行者の声こそが、次に来る旅行者にとって最も信頼できる道しるべだと考えています。</p>
+   <p class="en">Tastes differ from person to person, and between people living in Japan and those visiting from abroad. An average score across everyone cannot tell a traveler whether a place is right for them. For many, a trip to Japan is a once-in-a-lifetime experience, and we want every meal and every visit to be one without regret. We believe the most trustworthy guide is the honest voice of travelers who came before.</p>
+  </div>
+ </div>
+</section>
+<section id="story" class="reveal">
+ <div class="sec-head">
+  <h2><small>Our Story</small>創業の経緯</h2>
+  <div class="story">
+   <div class="step"><span>01</span><div><h3>宿で、海外からのお客様を迎えて</h3><p>私たちは墨田区・曳舟で宿泊施設の運営から始めました。スカイツリーのふもとの下町には、世界中から旅行者が訪れます。旅行者を迎える立場になって、日本人の評判を中心に作られた平均点の情報では、海外からの旅行者が自分に合う場所を選びきれないという課題に向き合うようになりました。</p></div></div>
+   <div class="step"><span>02</span><div><h3>運営の仕組みを、自分たちで作る</h3><p>小さな宿でも質の高いおもてなしを続けるため、予約の取り込みや清掃の手配、宿泊者名簿の管理を自動化する仕組みを自ら開発しました。現在は、同じ課題を持つ民泊運営者の皆さまにサービスとして提供しています。</p></div></div>
+   <div class="step"><span>03</span><div><h3>旅行者の声で、旅行者を案内する</h3><p>現場で積み重ねた経験と、開発の力を合わせて、海外の旅行者が残した声を言語ごとに丁寧に読み解き、次に来る旅行者へ届けるサービスに取り組んでいます。対象を広げる前に、まずは私たちが暮らし、働く墨田区で品質を確かめてから進めます。</p></div></div>
+  </div>
+ </div>
+</section>
+<section id="values" class="reveal">
+ <div class="sec-head">
+  <h2><small>Principles</small>大切にしていること</h2>
+  <div class="cards">
+   <div class="card"><div class="no">I</div><h3>旅行者の視点に立つ</h3><p>言語、食の制限（ハラール・ベジタリアンなど）、支払い方法、注文のしやすさ。海外からの旅行者が本当に困ることを基準に考えます。</p></div>
+   <div class="card"><div class="no">II</div><h3>情報の出どころに誠実に</h3><p>口コミは書いた人のものです。提供元のルールと利用条件を守り、出典を明らかにしたうえで、正しく伝えます。</p></div>
+   <div class="card"><div class="no">III</div><h3>地域と共に</h3><p>旅行者に良い店が見つかることは、地域のお店の力にもなります。墨田の下町から、旅行者と地域の双方に良い循環をつくります。</p></div>
+  </div>
+ </div>
+</section>
+<section id="business" class="reveal">
+ <div class="sec-head">
+  <h2><small>Business</small>事業内容</h2>
+  <div class="cards">
+   <div class="card"><div class="no">01</div><h3>宿泊事業</h3><p>墨田区で宿泊施設を運営し、Airbnb を通じて国内外のお客様をお迎えしています。</p>
+    <ul>
+     <li><a href="https://airbnb.jp/h/cshikifune" target="_blank" rel="noopener">CANCHAN STAYS Hikifune</a></li>
+     <li><a href="https://airbnb.jp/h/archaic205" target="_blank" rel="noopener">Archaic 205</a></li>
+     <li><a href="https://airbnb.jp/h/archaic205long" target="_blank" rel="noopener">Archaic 205 (Long stay)</a></li>
+    </ul>
+    <p class="en">Guest accommodation in Sumida, Tokyo, hosting travelers from around the world.</p></div>
+   <div class="card"><div class="no">02</div><h3>民泊運営クラウドサービス</h3><p>Airbnb・Booking.com の予約を自動で取り込み、清掃会社への清掃通知（LINE・メール）や宿泊者名簿の管理を行うサブスクリプション型のサービスを提供しています。</p>
+    <a class="more" href="https://clean.bnbop.jp/" target="_blank" rel="noopener">clean.bnbop.jp</a>
+    <p class="en">Subscription SaaS for rental operators: booking sync, cleaning notifications and guest registry.</p></div>
+   <div class="card"><div class="no">03</div><h3>訪日外国人向け旅行案内<span class="tag">開発中</span></h3><p>海外からの旅行者が実際にどう感じたかを多言語で分析・要約し、飲食店や観光スポットを外国人の目線で紹介するサービスを開発しています。まずは墨田区から始め、東京23区へ広げていきます。</p>
+    <p class="en">A multilingual guide that helps international visitors find great places, informed by what fellow travelers say.</p></div>
+  </div>
+ </div>
+</section>
+<section id="company" class="reveal">
+ <div class="sec-head">
+  <h2><small>Company</small>会社概要</h2>
+  <dl>
+   <dt>会社名</dt><dd>合同会社 CANCHAN STAYS<span class="en">CANCHAN STAYS LLC</span></dd>
+   <dt>所在地</dt><dd>東京都墨田区<span class="en">Sumida City, Tokyo, Japan</span></dd>
+   <dt>事業内容</dt><dd>宿泊施設の運営／民泊運営者向けクラウドサービスの提供／訪日外国人向け旅行案内サービスの企画・開発<span class="en">Accommodation / SaaS for short-term rental operators / Inbound travel guide</span></dd>
+   <dt>Webサイト</dt><dd>https://canchanstays.com/</dd>
+  </dl>
+ </div>
+</section>
+<section id="contact" class="reveal contact">
+ <div class="sec-head">
+  <h2><small>Contact</small>お問い合わせ</h2>
+  <div><p>事業・提携に関するお問い合わせは、下記までご連絡ください。<br><span style="color:var(--sub);font-size:14px">For business inquiries, please contact us by email.</span></p><p style="margin-top:12px"><a href="mailto:mitchy@canchanstays.com">mitchy@canchanstays.com</a></p></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">&copy; CANCHAN STAYS LLC</div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
